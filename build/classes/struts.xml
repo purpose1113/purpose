@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+		<package name="Ccgl" namespace="/" extends="struts-default">
+	    <action name="goindex" class="com.dyj.action.IndexAction">
+		<result name="index">/goindex.jsp</result>
+		</action>
+		<action name="login" class="com.dyj.action.LoginAction">
+		    <result name="loginOut">/admin.jsp</result>
+		</action>
+		<action name="supplier" class="com.dyj.action.SupplierAction">
+		</action>
+		<action name="goodcategories" class="com.dyj.action.GoodcategoriesAction">
+		</action>
+		<action name="good" class="com.dyj.action.GoodAction">
+		</action>
+		<action name="storage" class="com.dyj.action.StorageAction">
+		</action>
+		<action name="outstock" class="com.dyj.action.OutStockAction">
+		</action>
+		<action name="stock" class="com.dyj.action.StockAction">
+		</action>
+	</package>
+	<package name="jfreechart" namespace="/" extends="jfreechart-default">
+	<action name="1"  class="com.dyj.action.BarCharAction">
+	    <result name="success" type="chart">
+	     <param name="value">chart</param>
+	     <param name="type">png</param>
+	     <param name="width">700</param>
+	     <param name="height">500</param>
+         </result>
+	  </action>
+	  <action name="4"  class="com.dyj.action.LineCharAction">
+	    <result name="success" type="chart">
+	     <param name="value">chart</param>
+	     <param name="type">png</param>
+	     <param name="width">700</param>
+	     <param name="height">500</param>
+         </result>
+	  </action>
+	   <action name="7"  class="com.dyj.action.PieCharAction">
+	    <result name="success" type="chart">
+	     <param name="value">chart</param>
+	     <param name="type">png</param>
+	     <param name="width">700</param>
+	     <param name="height">500</param>
+         </result>
+	  </action>
+	  <action name="9"  class="com.dyj.action.PieCharAction">
+	    <result name="success" type="chart">
+	     <param name="value">chart</param>
+	     <param name="type">png</param>
+	     <param name="width">700</param>
+	     <param name="height">500</param>
+         </result>
+	  </action>
+	  <action name="10"  class="com.dyj.action.PieCharAction">
+	    <result name="success" type="chart">
+	     <param name="value">chart</param>
+	     <param name="type">png</param>
+	     <param name="width">700</param>
+	     <param name="height">500</param>
+         </result>
+	  </action>
+	  <action name="11"  class="com.dyj.action.PieCharAction">
+	    <result name="success" type="chart">
+	     <param name="value">chart</param>
+	     <param name="type">png</param>
+	     <param name="width">700</param>
+	     <param name="height">500</param>
+         </result>
+	  </action>
+	  </package>
+</struts>
